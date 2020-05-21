@@ -31,7 +31,7 @@ docking_station_label.translate(8.3, 4, 1.75)
 docking_station_label.rotate(math.pi/2, 0, math.pi/2 + 0.17)
 
 # Set the environment
-model_file=os.path.join(os.path.dirname(os.path.abspath( __file__ )),'thecollectionWithPips.blend')
+model_file=os.path.join(os.path.dirname(os.path.abspath( __file__ )),'data/thecollectionWithPips.blend')
 env = Environment(model_file,fastmode=False)
 env.set_camera_location([7.0, 15.0, 15.0])
 env.set_camera_rotation([math.pi/6, 0, math.pi])
