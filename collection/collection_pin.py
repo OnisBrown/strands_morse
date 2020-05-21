@@ -15,7 +15,7 @@ robot.translate(x=8.6, y=4, z=1)
 #robot.translate(x=1, y=7.62, z=0.0)
 robot.rotate(0, 0, 3.141592)
 human = Human()
-human.translate(x=6, y=-3, z=1.0)
+human.translate(x=7, y=3, z=1)
 
 # Battery discharging rate, in percent per seconds
 # The bateery state is published to /battery
