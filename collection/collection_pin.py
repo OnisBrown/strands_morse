@@ -16,7 +16,6 @@ robot.translate(x=8.6, y=4, z=1)
 robot.rotate(0, 0, 3.141592)
 human = Human()
 human.translate(x=7, y=3, z=1)
-human.armature.add_stream('pocolibs')
 
 # Battery discharging rate, in percent per seconds
 # The bateery state is published to /battery
