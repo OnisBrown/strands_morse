@@ -17,13 +17,13 @@ robot.rotate(0, 0, 3.141592)
 
 human=Human()
 human.use_world_camera()
-human.translate(x=7, y=4, z=1)
+human.translate(x=9.5, y=4, z=1)
 human.rotate(0, 0, 3.141592)
 human.properties(Object = True)
 pose = Pose()
 #sensor is offset in the simulation so correcting that
 pose.rotate(0, 0, -2.26893)
-pose.translate(x=-8.6, y=-4, z=-1)
+pose.translate(x=9.5, y=4, z=1)
 human.append(pose)
 pose.add_stream('ros', method="morse.middleware.ros.pose.PoseStampedPublisher")
 
