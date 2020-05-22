@@ -18,11 +18,11 @@ robot.rotate(0, 0, 3.141592)
 human=Human()
 human.use_world_camera()
 human.translate(x=7, y=4, z=1)
+human.rotate(0, 0, 3.141592)
 human.properties(Object = True)
-
 pose = Pose()
 human.append(pose)
-pose.add_stream('ros', method="morse.middleware.ros.pose.TFPublisher")
+pose.add_stream('ros', method="morse.middleware.ros.pose.PoseStampedPublisher")
 
 
 # Battery discharging rate, in percent per seconds
