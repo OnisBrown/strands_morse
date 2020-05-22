@@ -17,15 +17,11 @@ robot.rotate(0, 0, 3.141592)
 
 human=Human()
 human.use_world_camera()
-human.translate(x=7, y=4, z=0.1)
+human.translate(x=7, y=4, z=1)
 human.properties(Object = True)
 
 pose = Pose()
 human.append(pose)
-motion = MotionVW()
-human.append(motion)
-motion.properties(ControlType = 'Velocity')
-motion.add_stream('ros')
 pose.add_stream('ros', method="morse.middleware.ros.pose.TFPublisher")
 
 
