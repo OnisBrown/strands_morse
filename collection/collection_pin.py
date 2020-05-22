@@ -22,7 +22,7 @@ pose = Pose()
 pose.translate(x=7, y=3, z=1)
 pose.rotate(0, 0, 3.141592)
 human.append(pose)
-pose.add_stream('ros', method="morse.middleware.ros.pose.PoseStampedPublisher", frame_id="map" )
+pose.add_interface('ros', method="morse.middleware.ros.pose.PoseStampedPublisher", frame_id="map" )
 
 
 # Battery discharging rate, in percent per seconds
