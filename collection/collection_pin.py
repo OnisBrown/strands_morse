@@ -17,7 +17,7 @@ robot.rotate(0, 0, 3.141592)
 
 human=Human()
 human.use_world_camera()
-human.translate(x=-7, y=-2.5, z=0.1)
+human.translate(x=7, y=4, z=0.1)
 human.properties(Object = True)
 
 pose = Pose()
