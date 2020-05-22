@@ -22,8 +22,8 @@ human.rotate(0, 0, 3.141592)
 human.properties(Object = True)
 pose = Pose()
 #sensor is offset in the simulation so correcting that
-pose.rotate(0, 0, 2.26893)
-pose.translate(x=4.3,y=2.8, z=0)
+pose.rotate(0, 0, -2.26893)
+pose.translate(x=4,y=2, z=0)
 human.append(pose)
 pose.add_stream('ros', method="morse.middleware.ros.pose.PoseStampedPublisher")
 
