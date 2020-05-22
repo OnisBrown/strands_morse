@@ -14,14 +14,19 @@ robot = Scitosa5(with_cameras=Scitosa5.WITH_OPENNI)
 robot.translate(x=8.6, y=4, z=1)
 #robot.translate(x=1, y=7.62, z=0.0)
 robot.rotate(0, 0, 3.141592)
-human = Human()
+
+human=Human()
 human.use_world_camera()
-human.translate(x=7, y=3, z=1)
+human.translate(x=-7, y=-2.5, z=0.1)
+human.properties(Object = True)
+
 pose = Pose()
 human.append(pose)
 motion = MotionVW()
 human.append(motion)
-pose.add_stream('ros', method="morse.middleware.ros.pose.PoseStampedPublisher")
+motion.properties(ControlType = 'Velocity')
+motion.add_stream('ros')
+pose.add_stream('ros', method="morse.middleware.ros.pose.TFPublisher")
 
 
 # Battery discharging rate, in percent per seconds
