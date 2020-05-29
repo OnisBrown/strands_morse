@@ -9,7 +9,7 @@ from morse.builder import *
 from strands_sim.builder.robots import Scitosa5
 
 #robot = Ranger()
-robot = Scitosa5(with_cameras=Scitosa5.WITH_OPENNI)
+robot = Scitosa5(with_cameras=Scitosa5.WITHOUT_CAMERAS)
 
 robot.translate(x=8.6, y=4, z=1)
 #robot.translate(x=1, y=7.62, z=0.0)
@@ -43,6 +43,6 @@ docking_station_label.rotate(math.pi/2, 0, math.pi/2 + 0.17)
 
 # Set the environment
 model_file=os.path.join(os.path.dirname(os.path.abspath( __file__ )),'data/thecollectionWithPips.blend')
-env = Environment(model_file,fastmode=False)
+env = Environment(model_file,fastmode=True)
 env.set_camera_location([7.0, 15.0, 15.0])
 env.set_camera_rotation([math.pi/6, 0, math.pi])
