@@ -18,7 +18,7 @@ robot.rotate(0, 0, 3.141592)
 human=Human()
 human.use_world_camera()
 human.translate(x=10.5, y=4, z=1)
-human.rotate(0, 0, 3.141592)
+human.rotate(0, 0, 0)
 human.properties(Object = True)
 pose = Pose()
 #sensor is offset in the simulation in relation to rviz
