@@ -13,7 +13,7 @@ robot = Scitosa5(with_cameras=Scitosa5.WITHOUT_CAMERAS)
 
 robot.translate(x=8.6, y=4, z=1)
 #robot.translate(x=1, y=7.62, z=0.0)
-robot.rotate(0, 0, 3.141592)
+robot.rotate(3.141592, 0, 3.141592)
 
 # Battery discharging rate, in percent per seconds
 # The bateery state is published to /battery

@@ -21,9 +21,8 @@ human.translate(x=10.5, y=4, z=1)
 human.rotate(0, 0, 3.141592)
 human.properties(Object = True)
 pose = Pose()
+pose.rotate(0, 0, 3.141592)
 #sensor is offset in the simulation in relation to rviz
-pose.rotate(0, 0, 0.872662)
-pose.translate(x=0, y=0, z=0)
 human.append(pose)
 pose.add_stream('ros', method="morse.middleware.ros.pose.PoseStampedPublisher")
 # Battery discharging rate, in percent per seconds
